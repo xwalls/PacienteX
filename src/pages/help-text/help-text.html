@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Ayuda</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-col *ngFor="let i of items">
+    <div class="text" style="text-align:justify;"><h1>{{ i.title }}</h1></div>
+    <div *ngFor="let j of i.text">
+        <div [innerHTML]="j" style="text-align:justify;"></div>
+    </div>
+  </ion-col>
+</ion-content>

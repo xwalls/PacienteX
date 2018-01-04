@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>Conoce a tu medico</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content text-center class="grid-full">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="assets/imgs/doctor.jpeg" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="col-1">
+        <h5>Nombre del Doctor</h5>
+        <p>No.Cedula: 12345678</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="cell-2">
+      <ion-col>
+        <button class="btn1" ion-button round outline (click)="presentAlert()">
+          <ion-icon class="close" name="close" style="zoom:4.0;"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button class="btn2" ion-button round outline (click)="regresar()">
+          <ion-icon class="checkmark" name="checkmark" style="zoom:4.0;"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

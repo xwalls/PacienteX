@@ -1,0 +1,29 @@
+page-modal {
+  .btn1 {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 4px solid rgb(223, 80, 70);
+  }
+  .btn2 {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 4px solid rgb(62, 199, 62);
+  }
+  .btn1 .close {
+    color: rgb(223, 80, 70);
+  }
+  .btn2 .checkmark {
+    color: rgb(62, 199, 62);
+  }
+  .cell-2 {
+    background-color: #EEEEEE;
+  }
+
+  .grid-full ion-row {
+    height: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+}

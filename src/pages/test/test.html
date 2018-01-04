@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Ayuda</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div (click)="details()">
+    <p>Tu última consulta</p>
+  </div>
+  <div (click)="details()">
+    <!--src="{{ help.lastConsultation.img }}" -->
+    <img src="assets/imgs/ultimoViaje.png" />
+    <ion-item text-wrap>
+        Reportar un problema con esta consulta
+    </ion-item>
+  </div>
+  <div>
+    <p>Temas adicionales</p>
+  </div>
+  <div>
+    <ion-list>
+      <ion-item (click)="cuentaYpago()">
+        Opciones de cuenta y pago
+      </ion-item>
+      <ion-item (click)="guides()">
+        Guía de Dr. Chapp
+      </ion-item>
+      <ion-item (click)="modalPage()">
+        Probando el modal
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

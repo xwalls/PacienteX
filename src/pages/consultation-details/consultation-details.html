@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Detalles de la consulta</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <img src="assets/imgs/details.jpeg"/>
+  </div>
+  <div padding>
+    <ion-segment [(ngModel)]="tab">
+      <ion-segment-button value="ayuda">
+        Ayuda
+      </ion-segment-button>
+      <ion-segment-button value="recibo">
+        Recibo
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="tab">
+    <ion-list *ngSwitchCase="'ayuda'">
+      <ion-row>
+        <ion-item *ngFor="let i of options.help" (click)="selection(i.content)">
+          {{ i.name }}
+        </ion-item>
+      </ion-row>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'recibo'">
+      <ion-item *ngFor="let i of options.bill" (click)="selection(i.content)">
+        {{ i.name }}
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

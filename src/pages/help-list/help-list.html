@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Ayuda</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list text-wrap>
+    <ion-item *ngFor="let i of options" (click)="refresh(i.content)">
+      {{ i.name }}
+    </ion-item>
+  </ion-list>
+</ion-content>
